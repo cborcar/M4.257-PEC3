@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEC2 - Herramientas HTML y CSS</title>
+    <meta name="description" content="PEC 2 de la asignatura Herramientas HTML y CSS.">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+</head>
+
+
+<body id="fondo">
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <picture>
+                <source srcset="images/logo.png?as=avif" type="image/avif" />
+                <source srcset="images/logo.png?as=webp" type="image/webp" />
+                <img src="images/logo.png" alt="Logotipo Fans of Manowar" />
+            </picture>
+            <span>Fans of Manowar</span>
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+			<input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
+                <li class="active"><a href="presentacion.html">Presentación</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div class="contenedor margen">
+            <h1><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-flag-usa"></i> Presentación <i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-hand-fist"></i></h1>
+            <p>Este sitio web ha sido desarrollado por Cayetano Borja Carrillo para la asignatura Herramientas HTML y CSS del máster universitario en Desarrollo de Sitios y Aplicaciones Web impartido por la UOC. El objetivo de esta PEC es hacerle homenaje a una de las bandas metaleras más influyentes de la historia. Esta banda no es nada más y nada menos que...</p>
+
+            <img id="logoVectorial" src="images/logo.svg" alt="Logo vectorial">
+            
+            <h2>Secciones</h2>
+            <p>El sitio se compone de las siguientes secciones:</p>
+            <ul id="presentacion">
+                <li><strong>Portada: </strong>Página de bienvenida donde se muestra una foto de la banda y una frase del líder.</li>
+                <li><strong>Categoría: </strong>Se muestra un listado de categorías o elementos que componen el contenido de la página web. Pulsando sobre el enlace "Más información" que hay en cada uno, accedemos a los detalles de la categoría (siempre lleva a los detalles de Discografía).</li>
+                <li><strong>Detalle: </strong>Se muestra el detalle de la categoría "Discografía". En esa sección aparece un listado de todos los discos publicados y elementos multimedia (imágenes y vídeos).</li>
+                <li><strong>Presentación: </strong>Estás en ella. Explica el contenido del sitio web y donde llevan los enlaces. </li>
+                <li><strong>Enlaces: </strong>Se muestra el enlace a las fuentes bibliográficas consultadas para la realización del sitio web. </li>
+            </ul>
+            <h2>Metal-O-Meter</h2>
+            <p>¿Quieres saber cuán metalero eres? ¡Prueba nuestro Metal-O-Meter y él te lo dirá!</p>
+
+            <div class="resultado">
+                <img class="imagenMetalMeter" id="img0" src="images/interrogacion.jpg" alt="metal-o-meter">
+                <img class="imagenMetalMeter" id="img1" src="images/1.jpg" alt="metal-o-meter">
+                <img class="imagenMetalMeter" id="img2" src="images/2.jpg" alt="metal-o-meter">
+                <img class="imagenMetalMeter" id="img3" src="images/3.jpg" alt="metal-o-meter">
+                <img class="imagenMetalMeter" id="img4" src="images/4.jpg" alt="metal-o-meter">
+                <p id="textoResultado">Puntuación: ¿?</p>
+                <span id="descripcionResultado">Pulsa el botón de abajo para hacer el test.</span>
+                <button id="botonMetalMeter">Dale caña</button> 
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+		<div id="footer" class="contenedor">
+            <div id="footerLogo">
+                <picture>
+                    <source srcset="images/logo.png?as=avif" type="image/avif" />
+                    <source srcset="images/logo.png?as=webp" type="image/webp" />
+                    <img src="images/logo.png" alt="Logotipo Fans of Manowar" />
+                </picture>
+            </div>
+
+            <div>
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Categoría</a></li>
+                    <li><a href="detalle.html">Detalle</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Otros enlaces</h3>
+                <ul>
+                    <li><a href="https://manowar.com/">Sitio oficial</a></li>
+                    <li><a href="https://es.wikipedia.org/wiki/Manowar">Wikipedia</a></li>
+                    <li><a href="https://es-es.facebook.com/manowar">Facebook</a></li>
+                    <li><a href="https://twitter.com/manowar?lang=es">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/manowarband_official/?hl=es">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+	</footer>
+</body>
+
+</html>

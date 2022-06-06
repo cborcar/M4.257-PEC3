@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEC2 - Herramientas HTML y CSS</title>
+    <meta name="description" content="PEC 2 de la asignatura Herramientas HTML y CSS.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div id="logo">
+            <picture>
+                <source srcset="images/logo.png?as=avif" type="image/avif" />
+                <source srcset="images/logo.png?as=webp" type="image/webp" />
+                <img src="images/logo.png" alt="Logotipo Fans of Manowar" />
+            </picture>
+            <span>Fans of Manowar</span>
+        </div>
+        <!-- Menú de navegación -->
+        <nav>
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="categoria.html">Categoría</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <div id="portada">
+            <div id="imagenClip">
+                <img srcset="images/fuego-480w.jpg 480w,
+                            images/fuego-800w.jpg 800w,
+                            images/fuego-1200w.jpg 1200w"
+                     sizes="(max-width: 576px) 480px,
+                            (max-width: 768px) 800px,
+                            1200px"
+                     src="images/fuego-1200w.jpg" alt="Fuego">
+            </div>
+            <h2 id="tituloClip">Página no oficial de Manowar de fans para fans</h2>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+		<div id="footer" class="contenedor">
+            <div id="footerLogo">
+                <picture>
+                    <source srcset="images/logo.png?as=avif" type="image/avif" />
+                    <source srcset="images/logo.png?as=webp" type="image/webp" />
+                    <img src="images/logo.png" alt="Logotipo Fans of Manowar" />
+                </picture>
+            </div>
+
+            <div>
+                <h3>Navegación</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="categoria.html">Categoría</a></li>
+                    <li><a href="detalle.html">Detalle</a></li>
+                    <li><a href="presentacion.html">Presentación</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Otros enlaces</h3>
+                <ul>
+                    <li><a href="https://manowar.com/">Sitio oficial</a></li>
+                    <li><a href="https://es.wikipedia.org/wiki/Manowar">Wikipedia</a></li>
+                    <li><a href="https://es-es.facebook.com/manowar">Facebook</a></li>
+                    <li><a href="https://twitter.com/manowar?lang=es">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/manowarband_official/?hl=es">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+	</footer>
+</body>
+
+</html>
