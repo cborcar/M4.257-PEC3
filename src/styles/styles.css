@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 @import "npm:@fortawesome/fontawesome-free/css/all.min.css";
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -10,30 +10,29 @@ body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(0,0,0);
-  color: rgb(255,255,255);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
-h1{
+h1 {
   font-size: 1.9rem;
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 1.6rem;
 }
 
-h3{
+h3 {
   margin: 0;
   font-size: 1.2rem;
 }
 
-#fondo{
-  background-image: image-set(
-    url("images/fondo-490.jpg") 0.5x, 
-    url("images/fondo-980.jpg") 1x);
-  background-image: url("images/fondo-980.jpg");
-	background-repeat: no-repeat;
+#fondo {
+  background-image: image-set(url("../images/fondo-490.jpg") 0.5x,
+      url("../images/fondo-980.jpg") 1x);
+  background-image: url("../images/fondo-980.jpg");
+  background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
   background-attachment: fixed;
@@ -44,10 +43,10 @@ header {
   margin: auto;
   height: 170px;
   position: sticky;
-	top: 0px;
+  top: 0px;
   background-color: black;
   box-shadow: 0px 10px 10px black;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   vertical-align: middle;
   z-index: 1000;
 }
@@ -58,13 +57,13 @@ header {
   margin: auto;
 }
 
-#logo img{
+#logo img {
   vertical-align: middle;
   width: 120px;
   margin-right: 40px;
 }
 
-#logo span{
+#logo span {
   vertical-align: middle;
   font-size: 3.4rem;
   font-family: 'Metal Mania', cursive;
@@ -74,13 +73,13 @@ header input {
   display: none;
 }
 
-header label{
+header label {
   display: none;
   position: absolute;
   top: 20px;
   right: 0;
   font-size: 40px;
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
 }
 
 nav {
@@ -111,7 +110,7 @@ nav li a {
   text-decoration: none;
   text-align: center;
   line-height: 2.4rem;
-  display:block;
+  display: block;
   width: 100%;
   height: 2.4rem;
 }
@@ -126,20 +125,20 @@ nav li:hover {
 
 /* Dispositivos medianos (tablets) */
 @media screen and (max-width: 767px) {
-  h1{
+  h1 {
     font-size: 1.5rem;
     text-align: center;
   }
-  
-  h2{
+
+  h2 {
     font-size: 1.3rem;
   }
-  
-  h3{
+
+  h3 {
     font-size: 1.1rem;
   }
 
-  p{
+  p {
     font-size: 0.9rem;
   }
 
@@ -147,16 +146,16 @@ nav li:hover {
     padding-top: 10px;
   }
 
-  #logo img{
+  #logo img {
     width: 100px;
     margin-right: 30px;
   }
-  
-  #logo span{
+
+  #logo span {
     font-size: 2.6rem;
   }
 
-  header{
+  header {
     width: 86vw;
     height: 100px;
   }
@@ -164,42 +163,45 @@ nav li:hover {
   nav {
     padding: 0;
   }
+
   nav ul {
     display: none;
   }
 
-  header label{
-    display:block;
+  header label {
+    display: block;
   }
-  
-  input:checked  ~ ul{
-    display:block;
+
+  input:checked~ul {
+    display: block;
   }
 }
 
 /* Dispositivos pequeños (móviles) */
 @media screen and (max-width: 576px) {
-  #logo img{
+  #logo img {
     width: 70px;
     margin-right: 12px;
   }
-  
-  #logo span{
+
+  #logo span {
     font-size: 1.7rem;
   }
 
-  header{
+  header {
     width: 86vw;
     height: 75px;
   }
 
-  header label{
+  header label {
     top: 12px;
     font-size: 35px;
   }
 }
 
-main, article, footer{
+main,
+article,
+footer {
   width: 85vw;
   max-width: 850px;
   margin: 0 auto;
@@ -207,14 +209,13 @@ main, article, footer{
 
 #portada {
   margin: 80px auto 0 auto;
-  background-image: url("images/fuego2-1200w.jpg");
-  background-image: image-set(
-    url("images/fuego2-480w.jpg") 480w,
-    url("images/fuego2-800w.jpg") 800w,
-    url("images/fuego2-1200w.jpg") 1200w);
-	background-repeat: no-repeat;
+  background-image: url("../images/fuego2-1200w.jpg");
+  background-image: image-set(url("../images/fuego2-480w.jpg") 480w,
+      url("../images/fuego2-800w.jpg") 800w,
+      url("../images/fuego2-1200w.jpg") 1200w);
+  background-repeat: no-repeat;
   background-position: center, center;
-	background-size: cover;
+  background-size: cover;
   box-shadow: inset 0 0 15px 10px black;
   width: 100%;
   max-width: 700px;
@@ -234,11 +235,10 @@ main, article, footer{
 }
 
 #tituloClip {
-  background-image: url("images/fuego-1200w.jpg");
-  background-image: image-set(
-    url("images/fuego-480w.jpg") 480w,
-    url("images/fuego-800w.jpg") 800w,
-    url("images/fuego-1200w.jpg") 1200w);
+  background-image: url("../images/fuego-1200w.jpg");
+  background-image: image-set(url("../images/fuego-480w.jpg") 480w,
+      url("../images/fuego-800w.jpg") 800w,
+      url("../images/fuego-1200w.jpg") 1200w);
   background-clip: text;
   color: transparent;
   text-align: center;
@@ -247,20 +247,20 @@ main, article, footer{
   font-size: 2.5rem;
 }
 
-.margen{
-	margin: 1.6rem 0 3rem 0; 
+.margen {
+  margin: 1.6rem 0 3rem 0;
 }
 
-.contenedor{
-	width: 100%;
+.contenedor {
+  width: 100%;
   border: 1px solid white;
-  background-color: rgba(0,0,0,0.8);
-	margin-bottom: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
   padding: 1.1rem 1.8rem 1.8rem 1.5rem;
   text-align: justify;
 }
 
-.grid{
+.grid {
   display: grid;
   max-width: 550px;
   grid-template-columns: 35% auto;
@@ -268,18 +268,18 @@ main, article, footer{
   align-items: center;
 }
 
-.gridImagen img{
+.gridImagen img {
   width: 100%;
   padding-top: 10px;
 }
 
-.descripcion a{
-  color: rgb(255,255,255);
+.descripcion a {
+  color: rgb(255, 255, 255);
   float: right;
   transition: 0.3s linear;
 }
 
-.descripcion a:hover{
+.descripcion a:hover {
   color: rgb(156, 16, 16);
 }
 
@@ -288,40 +288,42 @@ main, article, footer{
   animation-name: desplazamientoIzquierda;
 }
 
-.categoriaDerecha{
-  margin-left: auto; 
+.categoriaDerecha {
+  margin-left: auto;
   margin-right: 0;
   animation-duration: 1s;
   animation-name: desplazamientoDerecha;
 }
 
-@keyframes desplazamientoIzquierda { 
+@keyframes desplazamientoIzquierda {
   from {
     margin-left: 10%;
   }
+
   to {
     margin-left: 0%;
-  } 
+  }
 }
 
-@keyframes desplazamientoDerecha { 
+@keyframes desplazamientoDerecha {
   from {
     margin-right: 10%;
   }
+
   to {
     margin-right: 0%;
-  } 
+  }
 }
 
 #portadaDiscografia {
-  width:  100%;
+  width: 100%;
   max-width: 490px;
   display: block;
   margin: 0 auto;
   transition: 0.1s linear;
 }
 
-#portadaDiscografia img{
+#portadaDiscografia img {
   width: 100%;
   animation-duration: 1.5s;
   animation-name: aparecimiento;
@@ -331,12 +333,14 @@ main, article, footer{
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
-.flexDiscos, .flexVideos {
+.flexDiscos,
+.flexVideos {
   width: 90%;
   margin: auto;
   display: flex;
@@ -345,34 +349,37 @@ main, article, footer{
   justify-content: center;
 }
 
-.flexDiscos img, .flexVideos iframe{
+.flexDiscos img,
+.flexVideos iframe {
   width: 90%;
   margin: 0 5%;
   margin: 1rem;
 }
 
-.flexDiscos img{
+.flexDiscos img {
   opacity: 70%;
   transition: 0.3s linear;
 }
 
-.flexDiscos img:hover{
+.flexDiscos img:hover {
   opacity: 100%;
 }
 
 .flexDiscosItem {
-  flex: 1 1 30%; /*grow | shrink | basis */
+  flex: 1 1 30%;
+  /*grow | shrink | basis */
 }
 
 .flexVideosItem {
   display: block;
-  flex: 2 1 40%; /*grow | shrink | basis */
+  flex: 2 1 40%;
+  /*grow | shrink | basis */
 }
 
-.flexVideosItem iframe{
-	border: none;
-	width: 90%;
-	height: 250px;
+.flexVideosItem iframe {
+  border: none;
+  width: 90%;
+  height: 250px;
 }
 
 #logoVectorial {
@@ -386,45 +393,54 @@ main, article, footer{
 }
 
 @keyframes cambioColor {
-  25%  { /*Rojo*/
+  25% {
+    /*Rojo*/
     filter: invert(12%) sepia(99%) saturate(7500%) hue-rotate(7deg) brightness(99%) contrast(113%);
   }
-  50% { /*Amarillo*/
+
+  50% {
+    /*Amarillo*/
     transform: rotate(-3deg);
     filter: invert(97%) sepia(62%) saturate(4293%) hue-rotate(360deg) brightness(110%) contrast(103%);
   }
-  75%  { /*Azul*/
+
+  75% {
+    /*Azul*/
     filter: invert(7%) sepia(99%) saturate(7292%) hue-rotate(248deg) brightness(116%) contrast(141%);
   }
-  100% { /*Verde*/
+
+  100% {
+    /*Verde*/
     transform: rotate(3deg);
     filter: invert(61%) sepia(97%) saturate(4306%) hue-rotate(92deg) brightness(127%) contrast(120%);
   }
 }
 
-li{
+li {
   margin-bottom: 0.3rem;
 }
 
-#presentacion li{
+#presentacion li {
   margin-bottom: 1rem;
   list-style-type: square;
 }
 
-.enlaceBasico, .enlaceSubrayado{
-  color: rgb(255,255,255);
+.enlaceBasico,
+.enlaceSubrayado {
+  color: rgb(255, 255, 255);
   transition: 0.3s linear;
 }
 
-.enlaceBasico{
+.enlaceBasico {
   text-decoration: none;
 }
 
-.enlaceBasico:hover, .enlaceSubrayado:hover{
+.enlaceBasico:hover,
+.enlaceSubrayado:hover {
   color: rgb(156, 16, 16);
 }
 
-.resultado{
+.resultado {
   width: 90%;
   max-width: 20rem;
   margin: 2rem auto;
@@ -432,20 +448,23 @@ li{
   text-align: center;
 }
 
-#descripcionResultado{
+#descripcionResultado {
   font-size: 0.8rem;
 }
 
-.imagenMetalMeter{
+.imagenMetalMeter {
   width: 100%;
   border: 1px solid white;
 }
 
-#img1, #img2, #img3, #img4{
+#img1,
+#img2,
+#img3,
+#img4 {
   display: none;
 }
 
-#botonMetalMeter{
+#botonMetalMeter {
   display: block;
   border: 1px solid white;
   background-color: rgba(96, 96, 96);
@@ -453,7 +472,8 @@ li{
   padding: 0.8rem 2rem;
   color: white;
 }
-#botonMetalMeter:active{
+
+#botonMetalMeter:active {
   background-color: white;
   color: black;
 }
@@ -466,16 +486,17 @@ li{
     padding: 1rem 1.1rem 1.3rem 1.1rem;
   }
 
-  .grid{
+  .grid {
     grid-template-columns: 40% auto;
   }
 
-  .categoriaIzquierda, .categoriaDerecha {
+  .categoriaIzquierda,
+  .categoriaDerecha {
     animation-name: none;
   }
-  
-  .margen{
-    margin: 0.7rem 0 4rem 0; 
+
+  .margen {
+    margin: 0.7rem 0 4rem 0;
   }
 
   #tituloClip {
@@ -487,22 +508,23 @@ li{
   }
 
   .flexDiscosItem {
-    flex: 1 2 50%; /*grow | shrink | basis */
+    flex: 1 2 50%;
+    /*grow | shrink | basis */
   }
 
   .flexVideos {
     display: block;
-  }  
+  }
 
   .flexVideosItem iframe {
     margin: 10px 5%;
     width: 90%;
-  }  
+  }
 }
 
 /* Dispositivos pequeños (móviles) */
 @media screen and (max-width: 576px) {
-  .grid{
+  .grid {
     gap: 15px;
   }
 
@@ -510,14 +532,14 @@ li{
     display: block;
   }
 
-  .flexDiscos img{
+  .flexDiscos img {
     width: 90%;
     margin: 10px 5%;
   }
 
   .flexVideosItem iframe {
     height: 160px;
-  }  
+  }
 }
 
 #footer {
@@ -525,7 +547,7 @@ li{
   flex-wrap: wrap;
 }
 
-#footer > div {
+#footer>div {
   flex: 1 1 30%;
   text-align: center;
   padding: 15px 0 0 0;
@@ -545,6 +567,7 @@ li{
   text-decoration: none;
   transition: 0.3s linear;
 }
+
 #footer a:hover {
   color: rgb(156, 16, 16);
   text-decoration: none;
