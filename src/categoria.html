@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html amp lang="es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,11 +42,16 @@
 			<!-- Contenedor -->
 			<div class="contenedor grid categoriaIzquierda">
                 <div class="gridImagen">
-                    <picture>
-                        <source srcset="images/discografia.png?as=avif" type="image/avif" />
-                        <source srcset="images/discografia.png?as=webp" type="image/webp" />
-                        <amp-img src="images/discografia.png" alt="Discografía" width="173px" height="173px" layout="responsive"></amp-img>
-                    </picture>
+                    <amp-img alt="Discografía"
+                        width="173"
+                        height="173"
+                        src="images/discografia.webp">
+                        <amp-img alt="Discografía"
+                            fallback
+                            width="173"
+                            height="173"
+                            src="images/discografia.jpg"></amp-img>
+                    </amp-img>
                 </div>
 				<div class="descripcion">
 					<h3>Discografía</h3>
@@ -58,11 +63,16 @@
 			<!-- Contenedor -->
 			<div class="contenedor grid categoriaDerecha">
                 <div class="gridImagen">
-                    <picture>
-                        <source srcset="images/miembros.jpg?as=avif" type="image/avif" />
-                        <source srcset="images/miembros.jpg?as=webp" type="image/webp" />
-                        <amp-img src="images/miembros.jpg" alt="Miembros" width="173px" height="173px" layout="responsive"></amp-img>
-                    </picture>
+                    <amp-img alt="Miembros"
+                        width="173"
+                        height="173"
+                        src="images/miembros.webp">
+                        <amp-img alt="Miembros"
+                            fallback
+                            width="173"
+                            height="173"
+                            src="images/miembros.jpg"></amp-img>
+                    </amp-img>
                 </div>
 				<div class="descripcion">
 					<h3>Miembros de la banda</h3>
@@ -74,11 +84,16 @@
 			<!-- Contenedor -->
 			<div class="contenedor grid categoriaIzquierda">
                 <div class="gridImagen">
-                    <picture>
-                        <source srcset="images/conciertos.jpg?as=avif" type="image/avif" />
-                        <source srcset="images/conciertos.jpg?as=webp" type="image/webp" />
-                        <amp-img src="images/conciertos.jpg" loading="lazy" alt="Conciertos" width="173px" height="173px" layout="responsive"></amp-img>
-                    </picture>
+                    <amp-img alt="Conciertos"
+                        width="173"
+                        height="173"
+                        src="images/conciertos.webp">
+                        <amp-img alt="Miembros"
+                            fallback
+                            width="173"
+                            height="173"
+                            src="images/conciertos.jpg"></amp-img>
+                    </amp-img>
                 </div>
 				<div class="descripcion">
 					<h3>Conciertos y eventos</h3>
@@ -90,11 +105,16 @@
 			<!-- Contenedor -->
 			<div class="contenedor grid categoriaDerecha">
                 <div class="gridImagen">
-                    <picture>
-                        <source srcset="images/curiosidades.jpg?as=avif" type="image/avif" />
-                        <source srcset="images/curiosidades.jpg?as=webp" type="image/webp" />
-                        <amp-img src="images/curiosidades.jpg" loading="lazy" alt="Curiosidades" width="173px" height="173px" layout="responsive"></amp-img>
-                    </picture>
+                    <amp-img alt="Curiosidades"
+                        width="173"
+                        height="173"
+                        src="images/curiosidades.webp">
+                        <amp-img alt="Curiosidades"
+                            fallback
+                            width="173"
+                            height="173"
+                            src="images/curiosidades.jpg"></amp-img>
+                    </amp-img>
                 </div>
 				<div class="descripcion">
 					<h3>Curiosidades</h3>
