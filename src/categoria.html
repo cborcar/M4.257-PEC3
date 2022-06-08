@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEC3 - Herramientas HTML y CSS</title>
     <meta name="description" content="PEC 3 de la asignatura Herramientas HTML y CSS.">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/categoria.css">
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body id="fondo">
@@ -16,7 +17,7 @@
             <picture>
                 <source srcset="images/logo.png?as=avif" type="image/avif" />
                 <source srcset="images/logo.png?as=webp" type="image/webp" />
-                <img src="images/logo.png" loading="lazy" alt="Logotipo Fans of Manowar" />
+                <img src="images/logo.png" loading="lazy" alt="Logotipo Fans of Manowar" width="120" height="91"/>
             </picture>
             <span>Fans of Manowar</span>
         </div>
@@ -110,7 +111,7 @@
                 <picture>
                     <source srcset="images/logo.png?as=avif" type="image/avif" />
                     <source srcset="images/logo.png?as=webp" type="image/webp" />
-                    <img src="images/logo.png" loading="lazy" alt="Logotipo Fans of Manowar" />
+                    <img src="images/logo.png" loading="lazy" alt="Logotipo Fans of Manowar" width="160" height="121"/>
                 </picture>
             </div>
 
