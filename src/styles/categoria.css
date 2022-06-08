@@ -178,6 +178,7 @@ footer {
 
 .gridImagen img {
   width: 100%;
+  height: auto;
   padding-top: 10px
 }
 
