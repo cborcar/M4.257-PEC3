@@ -29,9 +29,9 @@ h3 {
 }
 
 #fondo {
-  background-image: image-set(url("../images/fondo-490.jpg") 0.5x,
-      url("../images/fondo-980.jpg") 1x);
-  background-image: url("../images/fondo-980.jpg");
+  background-image: image-set(url("../images/fondo-490.webp") 0.5x,
+      url("../images/fondo-980.webp") 1x);
+  background-image: url("../images/fondo-980.webp");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: contain;
