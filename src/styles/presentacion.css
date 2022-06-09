@@ -217,6 +217,7 @@ footer {
   transform: rotate(3deg);
   animation: cambioColor 10s infinite;
   width: 100%;
+  height: auto;
   max-width: 500px;
 }
 

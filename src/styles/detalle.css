@@ -224,9 +224,20 @@ li {
   animation-duration: 1.5s;
 }
 
+@keyframes aparecimiento {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .flexDiscos,
 .flexVideos {
   width: 90%;
+  height: auto;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -237,6 +248,7 @@ li {
 .flexDiscos img,
 .flexVideos iframe {
   width: 90%;
+  height: auto;
   margin: 1rem;
 }
 

@@ -225,6 +225,26 @@ footer {
   animation-duration: 1s
 }
 
+@keyframes desplazamientoIzquierda {
+  from {
+    margin-left: 10%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes desplazamientoDerecha {
+  from {
+    margin-right: 10%;
+  }
+
+  to {
+    margin-right: 0%;
+  }
+}
+
 li {
   margin-bottom: .3rem
 }
