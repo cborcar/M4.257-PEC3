@@ -10,13 +10,28 @@ body {
   font-family: Inter, sans-serif;
 }
 
+h1 {
+  text-align: center;
+  font-size: 1.9rem
+}
+
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.6rem
 }
 
 h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.2rem
+}
+
+#fondo {
+  background-image: image-set(url("../images/fondo-490.webp") 0.5x,
+      url("../images/fondo-980.webp") 1x);
+  background-image: url("../images/fondo-980.webp");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 header {
@@ -102,12 +117,21 @@ nav li a {
 }
 
 @media screen and (max-width: 767px) {
+  h1 {
+    text-align: center;
+    font-size: 1.5rem
+  }
+
   h2 {
     font-size: 1.3rem
   }
 
   h3 {
     font-size: 1.1rem
+  }
+
+  p {
+    font-size: .9rem
   }
 
   #logo {
@@ -173,45 +197,8 @@ footer {
   margin: 0 auto
 }
 
-#portada {
-  margin: 80px auto 0 auto;
-  background-image: url("../images/fuego2-1200w.jpg");
-  background-image: image-set(url("../images/fuego2-480w.jpg") 480w,
-      url("../images/fuego2-800w.jpg") 800w,
-      url("../images/fuego2-1200w.jpg") 1200w);
-  background-repeat: no-repeat;
-  background-position: center, center;
-  background-size: cover;
-  box-shadow: inset 0 0 15px 10px black;
-  width: 100%;
-  max-width: 700px;
-  padding: 0;
-  margin: 60px auto 30px auto;
-  padding: 5%;
-}
-
-#imagenClip {
-  margin: auto;
-  width: 75%;
-  clip-path: polygon(0% 0%, 15% 0, 15% 10%, 50% 35%, 85% 10%, 85% 0%, 100% 0, 100% 100%, 85% 85%, 85% 40%, 50% 70%, 15% 40%, 15% 85%, 0% 100%);
-}
-
-#imagenClip img {
-  width: 100%;
-  height: auto;
-}
-
-#tituloClip {
-  background-image: url("../images/fuego-1200w.jpg");
-  background-image: image-set(url("../images/fuego-480w.jpg") 480w,
-      url("../images/fuego-800w.jpg") 800w,
-      url("../images/fuego-1200w.jpg") 1200w);
-  background-clip: text;
-  color: transparent;
-  text-align: center;
-  font-family: 'Metal Mania', cursive;
-  font-weight: 100;
-  font-size: 2.5rem;
+.margen {
+  margin: 1.6rem 0 3rem
 }
 
 .contenedor {
@@ -223,8 +210,80 @@ footer {
   padding: 1.1rem 1.8rem 1.8rem 1.5rem
 }
 
+#logoVectorial {
+  filter: invert(61%) sepia(97%) saturate(4306%) hue-rotate(92deg) brightness(127%) contrast(120%);
+  display: block;
+  margin: 0 auto;
+  transform: rotate(3deg);
+  animation: cambioColor 10s infinite;
+  width: 100%;
+  max-width: 500px;
+}
+
+@keyframes cambioColor {
+  25% {
+    /*Rojo*/
+    filter: invert(12%) sepia(99%) saturate(7500%) hue-rotate(7deg) brightness(99%) contrast(113%);
+  }
+
+  50% {
+    /*Amarillo*/
+    transform: rotate(-3deg);
+    filter: invert(97%) sepia(62%) saturate(4293%) hue-rotate(360deg) brightness(110%) contrast(103%);
+  }
+
+  75% {
+    /*Azul*/
+    filter: invert(7%) sepia(99%) saturate(7292%) hue-rotate(248deg) brightness(116%) contrast(141%);
+  }
+
+  100% {
+    /*Verde*/
+    transform: rotate(3deg);
+    filter: invert(61%) sepia(97%) saturate(4306%) hue-rotate(92deg) brightness(127%) contrast(120%);
+  }
+}
+
 li {
   margin-bottom: .3rem
+}
+
+#presentacion li {
+  margin-bottom: 1rem;
+  list-style-type: square
+}
+
+.resultado {
+  width: 90%;
+  max-width: 20rem;
+  text-align: center;
+  margin: 2rem auto;
+  display: block
+}
+
+#descripcionResultado {
+  font-size: .8rem
+}
+
+.imagenMetalMeter {
+  width: 100%;
+  border: 1px solid #fff
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+  display: none
+}
+
+#botonMetalMeter {
+  color: #fff;
+  background-color: #606060;
+  border: 1px solid #fff;
+  margin: 2rem auto;
+  padding: .8rem 2rem;
+  display: block
 }
 
 @media screen and (max-width: 767px) {
@@ -234,8 +293,14 @@ li {
     font-size: .9rem
   }
 
-  #tituloClip {
-    font-size: 1.8rem;
+  .margen {
+    margin: .7rem 0 4rem
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .grid {
+    gap: 15px
   }
 }
 

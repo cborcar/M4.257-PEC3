@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PEC3 - Herramientas HTML y CSS</title>
     <meta name="description" content="PEC 3 de la asignatura Herramientas HTML y CSS.">
-    <link rel="stylesheet" href="styles/styles.css">
     <script type="module" async src="app.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link rel="stylesheet" href="styles/presentacion.css">
+    <link rel="preload" href="styles/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="styles/styles.css"></noscript>
 </head>
 
 <body id="fondo">
@@ -41,7 +44,7 @@
             <p>Este sitio web ha sido desarrollado por Cayetano Borja Carrillo para la asignatura Herramientas HTML y CSS del máster universitario en Desarrollo de Sitios y Aplicaciones Web impartido por la UOC. El objetivo de esta PEC es hacerle homenaje a una de las bandas metaleras más influyentes de la historia. Esta banda no es nada más y nada menos que...</p>
 
             <img id="logoVectorial" loading="lazy" src="images/logo.svg" alt="Logo vectorial">
-            
+
             <h2>Secciones</h2>
             <p>El sitio se compone de las siguientes secciones:</p>
             <ul id="presentacion">
@@ -55,11 +58,27 @@
             <p>¿Quieres saber cuán metalero eres? ¡Prueba nuestro Metal-O-Meter y él te lo dirá!</p>
 
             <div class="resultado">
-                <img class="imagenMetalMeter" id="img0" src="images/interrogacion.jpg" loading="lazy" alt="metal-o-meter">
-                <img class="imagenMetalMeter" id="img1" src="images/1.jpg" loading="lazy" alt="metal-o-meter">
-                <img class="imagenMetalMeter" id="img2" src="images/2.jpg" loading="lazy" alt="metal-o-meter">
-                <img class="imagenMetalMeter" id="img3" src="images/3.jpg" loading="lazy" alt="metal-o-meter">
-                <img class="imagenMetalMeter" id="img4" src="images/4.jpg" loading="lazy" alt="metal-o-meter">
+                <amp-img class="imagenMetalMeter"
+                    id="img0"
+                    alt="metal-o-meter"
+                    src="images/interrogacion.webp"
+                    width="320"
+                    height="320"
+                    layout="responsive">
+                    <amp-img class="imagenMetalMeter"
+                        fallback
+                        id="img0"
+                        alt="metal-o-meter"
+                        src="images/interrogacion.jpg"
+                        width="320"
+                        height="320"
+                        layout="responsive"></amp-img>
+                </amp-img>
+
+                <img class="imagenMetalMeter" id="img1" src="images/1.jpg" loading="lazy" alt="metal-o-meter" width="320" height="320" />
+                <img class="imagenMetalMeter" id="img2" src="images/2.jpg" loading="lazy" alt="metal-o-meter" width="320" height="320" />
+                <img class="imagenMetalMeter" id="img3" src="images/3.jpg" loading="lazy" alt="metal-o-meter" width="320" height="320" />
+                <img class="imagenMetalMeter" id="img4" src="images/4.jpg" loading="lazy" alt="metal-o-meter" width="320" height="320" />
                 <p id="textoResultado">Puntuación: ¿?</p>
                 <span id="descripcionResultado">Pulsa el botón de abajo para hacer el test.</span>
                 <button id="botonMetalMeter">Dale caña</button> 
