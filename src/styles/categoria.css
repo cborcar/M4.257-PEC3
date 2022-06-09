@@ -103,10 +103,6 @@ nav li a {
   height: 2.4rem;
 }
 
-nav li:hover {
-  background-color: rgb(148, 81, 81);
-}
-
 .active {
   background-color: rgb(156, 16, 16);
 }

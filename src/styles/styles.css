@@ -1,3 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 @import "npm:@fortawesome/fontawesome-free/css/all.min.css";
+
+.enlaceBasico:hover,
+.enlaceSubrayado:hover {
+  color: rgb(156, 16, 16);
+}
+
+.descripcion a:hover {
+  color: rgb(156, 16, 16);
+}
+
+#footer a:hover {
+  color: rgb(156, 16, 16);
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: rgb(148, 81, 81);
+}
